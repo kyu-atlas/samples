@@ -1,0 +1,10 @@
+cd ${project_folder}
+
+#springboot
+${jmeter_path}/jmeter.bat -n -t HTTP_REQ.jmx -l result/result_sb.txt -e -o webreport_sb
+
+#vertx 1 verticle
+${jmeter_path}/jmeter.bat -n -t HTTP_REQ.jmx -l result/result_vx.txt -e -o webreport_vx
+
+#vertx 5 verticle
+${jmeter_path}/jmeter.bat -n -t HTTP_REQ.jmx -l result/result_vxt5.txt -e -o webreport_vxt5
